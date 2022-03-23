@@ -35,3 +35,16 @@ let a=function sub(num1,num2)
 
 console.log(a(10,5));
 
+//IIFE: immediately invoked function expression
+//without any parameters
+(function()
+{
+    console.log("Hello from IIFE"); 
+})();
+
+//with parameters
+(function(num1,num2)
+{
+    console.log(num1/num2); 
+})(10,5);
+
