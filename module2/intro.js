@@ -30,3 +30,16 @@ while(count<=5)
     count++;
 }
 
+//is prime ques
+
+let n=4;
+let cnt=0;//count
+for(let i=1;i<=n;i++)
+{
+    if(n%i==0)
+    cnt++;
+}
+if(cnt==2)
+console.log("prime");
+else
+console.log("NOT PRIME");
