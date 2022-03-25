@@ -5,9 +5,6 @@ let path=require("path");
 let extensionName=path.extname("C:\Users\Asus\OneDrive\Desktop\FPJ6\module2\node\path.js");
 console.log(extensionName);
 
-//let baseName=path.basename("C:\Users\Asus\OneDrive\Desktop\FPJ6\module1\index.html");
-//console.log(baseName);
-
 console.log("#####");
 let baseName=path.basename(__filename);
 console.log(baseName);
