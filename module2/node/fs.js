@@ -2,6 +2,7 @@ let fs=require("fs");
 //console.log(fs);
 
 let path=require("path");
+/*
 
 let filePath=path.join(__dirname,'file.txt'); //till here file.txt doesnt exist
 console.log(filePath);
@@ -29,3 +30,32 @@ console.log(fs.readFileSync(filePath,'utf-8'));
 
 //delete
 fs.unlinkSync(filePath);
+
+*/
+
+//create a directory
+if(!fs.existsSync("hamariDirectory"))
+fs.mkdirSync("hamariDirectory");
+//else
+//console.log("already existing");
+
+//read content inside any directory  or read a directory
+
+//let folderPath="C:/Users/Asus/OneDrive/Desktop/FPJ6/module1";
+
+let folderPath=__dirname;
+let folderContent=fs.readdirSync(folderPath);
+console.log(folderContent);
+
+//delete a directory
+
+fs.rmdirSync("hamariDirectory");
+
+//copy a file 
+
+let sourcePath = path.join(__dirname,"file.txt")
+let destinationPath = path.join(__dirname,"module","file.txt")
+console.log(sourcePath);
+console.log(destinationPath);
+
+fs.copyFileSync(sourcePath,destinationPath);
