@@ -14,7 +14,7 @@ function cb1(error,data){
 }
 function cb2(error,data){
     if(error){
-        console.log(erro);
+        console.log(error);
     }else{
         console.log("Data of file 2 --> "+data);
     }
